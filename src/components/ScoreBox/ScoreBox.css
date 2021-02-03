@@ -1,0 +1,8 @@
+.score {
+	background-color: #EDDE5D;
+	color: #403B4A;
+	padding: 10px;
+	position: absolute;
+	left: 450px ;
+	box-shadow: 0px 4px purple;
+}

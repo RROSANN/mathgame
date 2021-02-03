@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'tachyons';
+import ScoreBox from './components/ScoreBox/ScoreBox';
+import Correct from './components/Correct/Correct';
+import TryAgain from './components/TryAgain/TryAgain';
+import QuestionBox from './components/QuestionBox/QuestionBox';
+import InformationBox from './components/InformationBox/InformationBox';
+import Choices from './components/Choices/Choices';
+import StartReset from './components/StartReset/StartReset';
+import TimeRemaining from './components/TimeRemaining/TimeRemaining';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  className='container'>
+      <ScoreBox />
+      <Correct />
+      <TryAgain />
+      <QuestionBox />
+      <InformationBox />
+      <Choices />
+      <StartReset />
+      <TimeRemaining />
     </div>
   );
 }

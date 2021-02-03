@@ -1,0 +1,8 @@
+.wrong {
+	background-color: #c21500;
+	color: #ffffff;
+	padding: 10px;
+	position: absolute;
+	left: 260px;
+	display: none;
+}
