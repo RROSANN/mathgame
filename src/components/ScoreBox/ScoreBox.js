@@ -1,7 +1,7 @@
 import React from 'react';
 import './ScoreBox.css';
-
-const ScoreTop = () => {
+ 
+const ScoreTop = ({ score }) => {
 	return (
 
 		<div className="flex justify-between">
@@ -10,7 +10,7 @@ const ScoreTop = () => {
 		  <div className="w-15">
 		  </div>
 		  <div className=" score w-15">
-			Score: <span id='scoreValue'>0</span>
+			Score: {score}
 		  </div>
 		</div>
 	);

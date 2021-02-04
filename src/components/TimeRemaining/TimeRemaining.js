@@ -1,9 +1,9 @@
 import React from 'react';
 import './TimeRemaining.css';
 
-const TimeRemaining = () => {
+const TimeRemaining = (display) => {
 	return (
-		<div className="time">
+		<div  className="time">
 			Time remaining: <span id='timeremainingvalue'>60</span> sec
 		 </div>
 	);
