@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/mathgame/static/css/main.00553ff3.chunk.css",
-    "main.js": "/mathgame/static/js/main.b060eaa4.chunk.js",
-    "main.js.map": "/mathgame/static/js/main.b060eaa4.chunk.js.map",
-    "runtime-main.js": "/mathgame/static/js/runtime-main.2df665ff.js",
-    "runtime-main.js.map": "/mathgame/static/js/runtime-main.2df665ff.js.map",
+    "main.css": "/mathgame/static/css/main.e9eeb555.chunk.css",
+    "main.js": "/mathgame/static/js/main.b3fce8c4.chunk.js",
+    "main.js.map": "/mathgame/static/js/main.b3fce8c4.chunk.js.map",
+    "runtime-main.js": "/mathgame/static/js/runtime-main.30d2a822.js",
+    "runtime-main.js.map": "/mathgame/static/js/runtime-main.30d2a822.js.map",
     "static/css/2.31461e4f.chunk.css": "/mathgame/static/css/2.31461e4f.chunk.css",
     "static/js/2.f6ff044a.chunk.js": "/mathgame/static/js/2.f6ff044a.chunk.js",
     "static/js/2.f6ff044a.chunk.js.map": "/mathgame/static/js/2.f6ff044a.chunk.js.map",
-    "static/js/3.0346b3dd.chunk.js": "/mathgame/static/js/3.0346b3dd.chunk.js",
-    "static/js/3.0346b3dd.chunk.js.map": "/mathgame/static/js/3.0346b3dd.chunk.js.map",
+    "static/js/3.ab87a56c.chunk.js": "/mathgame/static/js/3.ab87a56c.chunk.js",
+    "static/js/3.ab87a56c.chunk.js.map": "/mathgame/static/js/3.ab87a56c.chunk.js.map",
     "index.html": "/mathgame/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/mathgame/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.00553ff3.chunk.css.map": "/mathgame/static/css/main.00553ff3.chunk.css.map",
+    "static/css/main.e9eeb555.chunk.css.map": "/mathgame/static/css/main.e9eeb555.chunk.css.map",
     "static/js/2.f6ff044a.chunk.js.LICENSE.txt": "/mathgame/static/js/2.f6ff044a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2df665ff.js",
+    "static/js/runtime-main.30d2a822.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.f6ff044a.chunk.js",
-    "static/css/main.00553ff3.chunk.css",
-    "static/js/main.b060eaa4.chunk.js"
+    "static/css/main.e9eeb555.chunk.css",
+    "static/js/main.b3fce8c4.chunk.js"
   ]
 }
