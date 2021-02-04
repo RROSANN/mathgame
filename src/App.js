@@ -9,6 +9,7 @@ import InformationBox from './components/InformationBox/InformationBox';
 import Choices from './components/Choices/Choices';
 import StartReset from './components/StartReset/StartReset';
 import TimeRemaining from './components/TimeRemaining/TimeRemaining';
+import GameOver from './components/GameOver/GameOver';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Choices />
       <StartReset />
       <TimeRemaining />
+      <GameOver />
     </div>
   );
 }
