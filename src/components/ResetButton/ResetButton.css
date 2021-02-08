@@ -1,0 +1,28 @@
+.reset {
+	background: #9796f0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #373B44;
+	padding: 10px;
+	position: absolute;
+	left: 230px;
+	box-shadow: 0px 4px #283048;
+	text-align: center;
+	font-family: cursive;
+	color: black;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.2s;
+	margin:0 auto;
+	display: none;
+}
+
+.reset:hover{
+	background: #B79891;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #94716B, #B79891);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #94716B, #B79891); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0px 4px #B79891;
+	color: white;
+}
+

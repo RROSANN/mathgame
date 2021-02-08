@@ -3,7 +3,6 @@ import './ScoreBox.css';
  
 const ScoreTop = ({ score }) => {
 	return (
-
 		<div className="flex justify-between">
 		  <div className=" w-15 ">
 		  </div>
