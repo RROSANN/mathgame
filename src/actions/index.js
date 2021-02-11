@@ -47,8 +47,12 @@ export const generateY = () => {
 	};
 };
 
-export const generateAnswer= () => {
+export const generateAnswer= (x,y) => {
 	return {
-		type: 'GENERATE_ANSWER'
+		type: 'GENERATE_ANSWER',
+		payload: {
+			x,
+			y
+		}
 	};
 };
