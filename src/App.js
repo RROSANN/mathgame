@@ -10,6 +10,8 @@ import Choices from './components/Choices/Choices';
 import StartButton from './components/StartButton/StartButton';
 import TimeRemaining from './components/TimeRemaining/TimeRemaining';
 import ResetButton from './components/ResetButton/ResetButton';
+import { generateX, generateY, generateAnswer } from './actions/index.js';
+import { connect } from 'react-redux';
 
 // if click start/reset button
   //if game is on 
@@ -35,47 +37,89 @@ import ResetButton from './components/ResetButton/ResetButton';
       //wrong
         //try again box
 
+
+  const mapStateToProps = (state) => {
+    return {
+      x: state.x,
+      y: state.y,
+      correctAnswer: state.correctAnswer
+    }
+  }
+
+  const mapDispatchToProps = () => {
+    return {
+      generateX, 
+      generateY,
+      generateAnswer
+    }
+  }
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      playing: false,
-      score: '',
       displayTime: false,
       startReset: "Start Game",
       displayReset: false,
-      displayStart: true
+      displayStart: true,
+      correctAnswer: '',
+      x: 1+ Math.round(9*Math.random()),
+      y: 1+ Math.round(9*Math.random())
   }
 }
+   /*generateQA = () => {
+    this.setState({correctAnswer: this.props.x*this.props.y},
+    function(){
+      console.log(this.state.correctAnswer);
+      console.log(this.props.x);
+      console.log(this.props.y);
+    });
+  }*/ 
 
+  generateQA = () => {
+    this.setState({
+        x: 1+ Math.round(9*Math.random()),
+        y: 1+ Math.round(9*Math.random())
+      })
+  }
+
+  generateQ = () => {
+    this.setState({
+      correctAnswer: this.state.x*this.state.y
+      })
+  }
+  
+
+ 
 
   // if click start/reset button
-  start = (event, playing, score, refreshPage, startCountDown, timeLeft, timeLeftValue) => {
+  start = (generateQA) => {
     //if game is on 
-    if(playing === true){
+    if(1===2){
       //reload page not working, was supposed to go and take from server..but done a new button and fixed that.
       window.location.reload();
     }else{ //if game not on
-      this.setState({
-        playing: true,
-        score: 0,     //set score to 0
+      this.setState({     //set score to 0
         displayTime: true,  //show show time remaining box
-        startReset: "Start Game",
         displayReset: true,
-        displayStart: false    //change start button to reset game button
-      })      
+        displayStart: false   //change start button to reset game button
+      })
+      this.generateQA()
+      this.generateQ()
     }
-
   }
 
+
+
+
   render() {
-    const { timeLeftValue, playing } = this.state; 
+    const { timeLeftValue, playing, x, y} = this.state; 
     return (
         <div  className='container'>
-          <ScoreBox score={this.state.score}/>
+          <ScoreBox />
           <Correct />
           <TryAgain />
-          <QuestionBox />
+          <QuestionBox correctAnswer = {this.state.correctAnswer} x = {x} y = {y}/>
           <InformationBox />
           <Choices />
           <StartButton start={this.start} startReset = {this.state.startReset} displayStart = {this.state.displayStart}/>
@@ -86,4 +130,8 @@ class App extends Component {
     }
 }
 
-export default App;
+
+ 
+
+
+export default /*connect(mapStateToProps, mapDispatchToProps())*/App;

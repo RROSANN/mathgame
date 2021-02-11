@@ -1,10 +1,10 @@
 import React from 'react';
 import './QuestionBox.css';
 
-const QuestionBox = () => {
+const QuestionBox = ({correctAnswer,x,y}) => {
 	return (
 		<div className="question">
-			7x9
+			{x}x{y}
 		 </div>
 	);
 }

@@ -1,6 +1,11 @@
 import React from 'react';
 import  GameOver from '../GameOver/GameOver';
 import './TimeRemaining.css';
+import { displayTimeRemaining, hideTimeRemaining } from '../../actions/index.js';
+import { connect,useDispatch } from 'react-redux';
+
+
+
 	
 
 class TimeRemaining extends React.Component {
@@ -8,14 +13,18 @@ class TimeRemaining extends React.Component {
 		super(props)
 		this.tick = this.tick.bind(this)
 		this.state = {
-			playing: this.props.playing,
 			score: this.props.score,
-			seconds: 5,
+			displayTime: this.props.displayTime,
+			seconds: 60,
 			showResult: false,
+			deleteTime: true
 		}
-	}
+	} 
 
-  componentDidMount(){
+
+
+
+  	componentDidMount(){
 	    this.timer = setInterval(this.tick, 1000);
 	  }
 
@@ -29,15 +38,32 @@ class TimeRemaining extends React.Component {
 	      })
 	    }
   	}
+  	
 
-	render(){		
+	render(){
 		return (
-			<div style={{ display: (this.props.displayTime === true) ? "block" : "none" }} className="time">
+			 <div  style={{ display: (this.props.displayTime === true) ? "block" : "none" }}className="time">
 				Time remaining: {this.state.seconds} sec
-				<GameOver score={this.state.score} showResult={this.state.showResult}/>	
-			 </div>
+				<GameOver showResult={this.state.showResult}/>	
+			 </div> 
 		);
 	}
 }
 
-export default TimeRemaining;
+	const mapStateToProps = (state) => {
+		return {
+			displayTimeRemaining: state.displayTimeRemaining
+		}
+	}
+
+	const mapDispatchToProps = () => {
+		return {
+			displayTimeRemaining, 
+			hideTimeRemaining
+		}
+	}
+
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps()) (TimeRemaining);
