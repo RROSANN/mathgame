@@ -5,7 +5,11 @@ import displayStartButton from './displayStartButton.js';
 import xReducer from './xReducer.js';
 import yReducer from './yReducer.js';
 import correctAnswerReducer from './correctAnswerReducer.js';
-
+import displayGameOver from './displayGameOver.js';
+import displayResetReducer from './displayResetReducer.js';
+import correctPositionReducer from './correctPositionReducer.js';
+import wrongAnswerReducer from './wrongAnswerReducer.js';
+import answersReducer from './answersReducer.js';
 
 import { combineReducers } from 'redux';
 
@@ -16,7 +20,12 @@ const allReducers = combineReducers({
 	displayStartButton,
 	y: yReducer,
 	x: xReducer,
-	correctAnswer: correctAnswerReducer
+	correctAnswer: correctAnswerReducer,
+	displayGameOver,
+	displayResetButton: displayResetReducer,
+	correctPosition: correctPositionReducer,
+	wrongAnswer: wrongAnswerReducer,
+	answers: answersReducer
 });
 
 export default allReducers;

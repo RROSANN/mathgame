@@ -56,3 +56,50 @@ export const generateAnswer= (x,y) => {
 		}
 	};
 };
+
+export const generateWrongAnswer= (x,y) => {
+	return {
+		type: 'GENERATE_WRONG_ANSWER',
+		payload: {
+			x,
+			y
+		}
+	};
+};
+
+export const displayGO = () => {
+	return {
+		type: 'DISPLAY_GAME_OVER'
+	};
+};
+
+export const hideGO = () => {
+	return {
+		type: 'HIDE_GAME_OVER'
+	};
+};
+
+export const hideSB = () => {
+	return {
+		type: 'HIDE_START_BUTTON'
+	};
+};
+
+export const showRB = () => {
+	return {
+		type: 'DISPLAY_RESET_BUTTON'
+	};
+};
+
+export const generateCorrectPosition = () => {
+	return {
+		type: 'GENERATE_CORRECT_POSITION'
+	};
+};
+
+export const addCorrectAnswer= (data) => {
+	return {
+		type: 'APPEND_CORRECT_ANSWER',
+		payload: [data]
+	};
+};

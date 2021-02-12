@@ -1,4 +1,4 @@
-const displayStartButton = (state = true, action) => {
+const displayStartButtonReducer = (state = true, action) => {
 	switch(action.type){
 		case 'DISPLAY_START_BUTTON':
 			return true;
@@ -9,4 +9,4 @@ const displayStartButton = (state = true, action) => {
 	}
 };
 
-export default displayStartButton;
+export default displayStartButtonReducer;

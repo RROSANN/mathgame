@@ -1,6 +1,3 @@
-
-
-
 const correctAnswerReducer = (state = '', action) => {
 	switch(action.type){
 		case 'GENERATE_ANSWER':
