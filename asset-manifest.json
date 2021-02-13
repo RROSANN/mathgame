@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/mathgame/static/css/main.012db284.chunk.css",
-    "main.js": "/mathgame/static/js/main.7a5cb86a.chunk.js",
-    "main.js.map": "/mathgame/static/js/main.7a5cb86a.chunk.js.map",
-    "runtime-main.js": "/mathgame/static/js/runtime-main.604eb9ab.js",
-    "runtime-main.js.map": "/mathgame/static/js/runtime-main.604eb9ab.js.map",
+    "main.css": "/mathgame/static/css/main.e8f41aed.chunk.css",
+    "main.js": "/mathgame/static/js/main.02333838.chunk.js",
+    "main.js.map": "/mathgame/static/js/main.02333838.chunk.js.map",
+    "runtime-main.js": "/mathgame/static/js/runtime-main.d2dba3d9.js",
+    "runtime-main.js.map": "/mathgame/static/js/runtime-main.d2dba3d9.js.map",
     "static/css/2.31461e4f.chunk.css": "/mathgame/static/css/2.31461e4f.chunk.css",
-    "static/js/2.0020314e.chunk.js": "/mathgame/static/js/2.0020314e.chunk.js",
-    "static/js/2.0020314e.chunk.js.map": "/mathgame/static/js/2.0020314e.chunk.js.map",
-    "static/js/3.177efb3c.chunk.js": "/mathgame/static/js/3.177efb3c.chunk.js",
-    "static/js/3.177efb3c.chunk.js.map": "/mathgame/static/js/3.177efb3c.chunk.js.map",
+    "static/js/2.01201af7.chunk.js": "/mathgame/static/js/2.01201af7.chunk.js",
+    "static/js/2.01201af7.chunk.js.map": "/mathgame/static/js/2.01201af7.chunk.js.map",
+    "static/js/3.663d6082.chunk.js": "/mathgame/static/js/3.663d6082.chunk.js",
+    "static/js/3.663d6082.chunk.js.map": "/mathgame/static/js/3.663d6082.chunk.js.map",
     "index.html": "/mathgame/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/mathgame/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.012db284.chunk.css.map": "/mathgame/static/css/main.012db284.chunk.css.map",
-    "static/js/2.0020314e.chunk.js.LICENSE.txt": "/mathgame/static/js/2.0020314e.chunk.js.LICENSE.txt"
+    "static/css/main.e8f41aed.chunk.css.map": "/mathgame/static/css/main.e8f41aed.chunk.css.map",
+    "static/js/2.01201af7.chunk.js.LICENSE.txt": "/mathgame/static/js/2.01201af7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.604eb9ab.js",
+    "static/js/runtime-main.d2dba3d9.js",
     "static/css/2.31461e4f.chunk.css",
-    "static/js/2.0020314e.chunk.js",
-    "static/css/main.012db284.chunk.css",
-    "static/js/main.7a5cb86a.chunk.js"
+    "static/js/2.01201af7.chunk.js",
+    "static/css/main.e8f41aed.chunk.css",
+    "static/js/main.02333838.chunk.js"
   ]
 }
