@@ -100,6 +100,6 @@ export const generateCorrectPosition = () => {
 export const addCorrectAnswer= (data) => {
 	return {
 		type: 'APPEND_CORRECT_ANSWER',
-		payload: [data]
+		payload: data
 	};
 };

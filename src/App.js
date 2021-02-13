@@ -15,7 +15,7 @@ import { connect } from 'react-redux';
 
 
 // if click start/reset button
-  //if game is on 
+  //if playing is true
     //reload page 
   //if not game on 
     //set score to 0
@@ -37,6 +37,8 @@ import { connect } from 'react-redux';
         //generate new question and answers
       //wrong
         //try again box
+
+        
 const mapStateToProps = state => {
   return {
     displayTimeRemaining: state.displayTimeRemaining,
